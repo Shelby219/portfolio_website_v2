@@ -1,0 +1,124 @@
+
+/*****ANIMATIONS******/
+
+
+/*****Alternative HOVER ANIMATION******/
+
+.footer-links:hover , .icons:hover, .blog-recent-posts a:hover {
+  border-bottom: solid 2px $alternate-color;    
+  color: $hover-color;
+}
+/*****My work and blog posts ******/
+.read-more:hover, .arrow-right:hover, .project-description h4:hover{
+  background-color: $alternate-color;
+  border-radius: 30px; 
+  padding: 10px;
+  cursor: pointer;
+  color: $hover-color;
+}
+/*************************/
+
+
+/*****Hover ANIMATION******/
+  .item-underline{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .item-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background:$alternate-color;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .item-underline:hover:before, .item-underline:focus:before, .item-underline:active:before {
+    left: 0;
+    right: 0;
+  }
+ /*********************************/  
+
+
+
+
+/*****LOGO ANIMATION******//*
+.Navbar__Link-brand:hover  {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+/*************************/
+
+
+
+
+
+
+
+
+
+
+
+/*****SLIDE IN ANIMATION******/
+/**    .page-headings{
+        animation-duration: 3s;
+        animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+            margin-left: 100%;
+            width: 300%;
+            }
+            to {
+            margin-left: 0%;
+            width: 100%;
+            }
+        }*/
+/*****SLIDE UP ANIMATION******/
+    .intro-sec1 {
+      animation-duration: 3s;
+      animation-name: slideup;
+      }
+
+      @keyframes slideup {
+          from {margin-bottom: 100%; width: 300%;}
+          to {       width: 100%;}
+      }
+
+/*****FADING ANIMATION******/
+@keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-moz-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-webkit-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+
+.desktop-container, .core-container {
+    -webkit-animation:fadeIn ease-in 1; 
+    animation:fadeIn ease-in 1;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}

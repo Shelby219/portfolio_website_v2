@@ -1,0 +1,180 @@
+/* Mobile Styles */ /* Footer */
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    
+}  
+.footer-part1-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+} 
+.footer-part1 { 
+    display: flex;
+    justify-content: flex-start;  
+    padding: 10px;
+    align-self: left;
+    font-family:  $heading-font-family;
+    font-weight: bold;
+    font-size: 2rem;
+}
+ .footer-part2, .footer-part3, .footer-part4, .footer-part5, .footer-icons, .footer-base {
+    display: flex;
+    justify-content: flex-start;  
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.footer-part5 {
+    display: inline-block;
+}
+
+.footer-icons {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.icons {
+    list-style: none;
+    padding: 10px;
+    margin: 10px; 
+    font-size: 1.75rem;
+    color: black;
+}
+.footer-base {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-base p, .footer-base a  {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: $heading-color;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+}
+
+
+
+/*******************************/
+
+
+
+/* Tablet Styles */ /* FOOTER */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+       .footer-container {
+        margin: 30px;
+       }
+       .footer-part1-container {
+        margin-left: 50px; 
+        margin-bottom: -20px;
+       }
+       
+       .footer-part2, .footer-part3, .footer-part4, .footer-part5, .footer-icons, .footer-base {
+        width: 300px;
+        height: 40px;
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-icons {
+        margin-right: 50px;
+        margin-left: -20px;
+        margin-top: -15px;
+    }
+    .footer-base {
+        width: 100%;
+        padding: 30px 0px 20px 0px;
+        margin: 30px 0px 20px 0px;    
+    }
+   
+        
+}
+
+/* Desktop Styles */ /* FOOTER */
+@media only screen and (min-width: 996px) {
+    .footer-container {
+        justify-content: center;
+        margin: 30px;
+       }
+       .footer-part1-container {
+        justify-content: center;
+         
+        margin-bottom: -20px;
+       }
+       
+       .footer-part2, .footer-part3, .footer-part4, .footer-part5, .footer-icons, .footer-base {
+        width: 300px;
+        height: 40px;
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-icons {
+        margin-right: 50px;
+        margin-left: -20px;
+        margin-top: -15px;
+    }
+    .footer-base {
+        width: 100%;
+        padding: 30px 0px 20px 0px;
+        margin: 30px 0px 20px 0px;    
+    }
+  }
+/* RETURN TO TOP */ /* FOOTER this was leart via a code pen... I wanted a return to top that actually went to the top not just reloaded the page */
+  #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
