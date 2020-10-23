@@ -1,4 +1,4 @@
-// This code is from stack overflow, found this was a good way to have a burger nav bar...
+
  function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
     
@@ -7,7 +7,7 @@
   
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
-// ===== Scroll to Top ==== //  // ===== Using this piece of code to be able to back to top- this was learnt via a code pen ==== // 
+// ===== Scroll to Top ==== /
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
       $('#return-to-top').fadeIn(200);    // Fade in the arrow
