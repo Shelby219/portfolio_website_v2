@@ -54,29 +54,6 @@
 
 
 
-/*****LOGO ANIMATION******//*
-.Navbar__Link-brand:hover  {
-  animation-name: spin;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-}
-
-@keyframes spin {
-  from {
-      transform:rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/
-/*************************/
-
-
-
-
-
 
 
 
@@ -106,7 +83,7 @@
       }
 
       @keyframes slideup {
-          from {margin-bottom: 100%; width: 300%;}
+          from {margin-bottom: 100%; width: 200%;}
           to {       width: 100%;}
       }
 

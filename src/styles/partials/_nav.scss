@@ -4,21 +4,20 @@
     background-color: $white-color;
     display: flex;
     padding: 16px;
-    border-bottom: solid 1px $alternate-color;      
-   
   }
-
   .Navbar__Link {
     padding-right: 8px;
     list-style: none;
-    
   }
-  .Navbar__Link-brand img {
-    width: 50px;
+  .Navbar__Link-brand  {
+  margin-top: 10px;
   }
 
   .Navbar__Items {
+    margin-top: 5px;
     display: flex;
+    text-decoration: none;
+    margin-left:auto;
     text-decoration: none;
   }
   .item {
@@ -29,15 +28,17 @@
     margin-right: 50px;
     padding: 10px;
     color: $text-color;
-    text-transform: uppercase;
+    font-weight: 600;
   }
-  
+  .se-logo {
+    width: 150px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
 
-  .Navbar__Items--right {
-    margin-left:auto;
-    text-decoration: none;
-  }
-  
   .Navbar__Link-toggle {
     display: none;
   }
@@ -47,14 +48,14 @@
     .Navbar {
       flex-direction: column;
       text-decoration: none;
+      padding: 25px;
     }
     .Navbar__Items {
       display:none;
-    }
-    .Navbar__Items--right {
       margin-left:0;
       text-align: center;
     }
+  
     .Navbar__ToggleShow {
       display: flex;
     }
@@ -71,10 +72,8 @@
      }
      .item {
         color: $text-color;
-        background-color: $alternate-color;
         text-decoration: none;
         display: flex;
         justify-content: center;
-        width: 100%;  /*****EDIT THIS FOR BETTER NAV BAR**/
       }
   }
