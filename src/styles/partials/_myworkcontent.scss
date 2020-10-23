@@ -1,7 +1,7 @@
 
  /*****MY WORK MAIN CONTENT******/
 .completed-projects img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     padding: 5px;
     border-radius: 15px;
@@ -10,7 +10,7 @@
 
 .completed-projects ul li {
     list-style: none;   
-    border-bottom: 3px solid $heading-color;
+    border-bottom: 3px solid $text-color;
     border-bottom-style: dotted;
     margin-top: 30px;
 }
@@ -67,3 +67,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     
     }
+
+
+    
+
+
+    

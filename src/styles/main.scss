@@ -24,7 +24,7 @@ body {
     grid-template-rows: 0.1fr auto 0.1fr;
     height: 100vh;
     font-family: $body-font-family;
-    background-color: $background-color
+    background: linear-gradient(90deg, $background-color 50%, $white-color 50%);
 }
 
 /* Mobile menu */
@@ -55,13 +55,13 @@ main {
     font-size: 3rem;
 }
 .page-headings span {
-    color: $heading-color;
+    color: $text-color;
     font-size: 2rem;
 }  
 .page-headings b {
     display: block;
     font-size: 0.9rem;
-    color: $heading-color;
+    color: $text-color;
     font-family: $heading-font-family;
 }
 /*****CORE FOR MOST PAGE FORMATTING******/

@@ -1,18 +1,4 @@
-/*******************************/
 
- /*****BACKGROUND FOR HOME PAGE COME BACK TO******/
-  /*
-.background-img  {
-    width: 100%;
-    height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1588097237448-45f7aadebae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 50%;
-    height: 70%;
-    border-radius: 50%;
-    }
-**/
   /*****WELCOME INTRO SECTION******/
   .intro-container {
     display: flex; 
@@ -34,12 +20,15 @@ section div.intro-sec1 img {
 }
 .intro-container h2 {
         font-size: 4rem;
-        color: $heading-color;
+        color: $white-color;
+        -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+        
     }
 .intro-container h1 {
-        font-size: 5em;
-        font-family: $heading-font-family;
-        font-weight: bold;
+font-size: 5em;
+font-family: $heading-font-family;
+font-weight: bold;
 }
     
 p span.features-special {
@@ -47,9 +36,15 @@ color:$text-color;
 font-size: 2rem;
 font-weight: 600;
 }
+p span:nth-child(4).features-special {
+    color:$alternate-color;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: $heading-font-family;
+    }
 
 h1 span.features-special {
-color: $heading-color;
+color: $alternate-color;
 font-size: 4rem;
 }
 /*******************************/
@@ -86,6 +81,7 @@ font-size: 4rem;
 
     .intro-container h2 {
         font-size: 5rem;
+        
     }
     .intro-container h1 {
             font-size: 6rem;
