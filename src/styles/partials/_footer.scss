@@ -4,6 +4,7 @@
     flex-flow: row wrap;
     padding: 0;
     margin: 0;
+ 
     
 }  
 .footer-part1-container {
@@ -35,6 +36,7 @@
 .footer-icons {
     padding-top: 20px;
     list-style: none;
+  
 }
 
 .icons {
@@ -66,10 +68,6 @@
     font-weight: 600;
 
 }
-
-
-
-/*******************************/
 
 
 
@@ -115,10 +113,8 @@
        }
        .footer-part1-container {
         justify-content: center;
-         
         margin-bottom: -20px;
        }
-       
        .footer-part2, .footer-part3, .footer-part4, .footer-part5, .footer-icons, .footer-base {
         width: 300px;
         height: 40px;
@@ -137,7 +133,7 @@
         margin: 30px 0px 20px 0px;    
     }
   }
-/* RETURN TO TOP */ /* FOOTER this was leart via a code pen... I wanted a return to top that actually went to the top not just reloaded the page */
+/* RETURN TO TOP */ 
   #return-to-top {
     position: fixed;
     bottom: 20px;

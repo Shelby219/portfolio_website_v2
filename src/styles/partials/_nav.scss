@@ -1,5 +1,15 @@
 /* menu bar area drop down*/
-  
+/* Mobile menu */
+header {
+  background-color: $background-color;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+}
+
+header img {
+  width: 2.5em; 
+}
 .Navbar {
     background-color: $white-color;
     display: flex;
