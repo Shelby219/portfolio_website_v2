@@ -4,8 +4,18 @@
     
     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
   }
-  
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+
+
+
+// ===== sliding down project text ==== /
+  $(document).ready(function(){
+    $("#ytc").hover(function(){
+      $("#slidedown").slideDown("slow");
+      $("#slideup").slideUp("slow");
+    });
+  });
+
 
 // ===== Scroll to Top ==== /
 $(window).scroll(function() {
@@ -20,4 +30,3 @@ $('#return-to-top').click(function() {      // When arrow is clicked
       scrollTop : 0                       // Scroll to top of body
   }, 500);
 });
-//******************************************************************************* */ // 

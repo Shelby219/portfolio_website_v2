@@ -608,6 +608,8 @@ main {
   position: relative;
   left: 2rem;
   padding-top: 1rem;
+  width: 300px;
+  display: none;
 }
 
 .all-projects div .tech-stack li,

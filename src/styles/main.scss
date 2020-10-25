@@ -51,7 +51,11 @@ main {
       background: $colour;
       transition: .5s ease-in;
     }
+   
 }
+
+
+
 .container {
     @include flex(column, center);
     width: 65vw;
@@ -77,6 +81,7 @@ main {
         
         overflow: hidden;
         margin: 10px 0;
+     
        
         @media only screen and (min-width: 601px) {
           margin: 10px 10px;
@@ -87,6 +92,8 @@ main {
           position: relative;
           left: 2rem;
           padding-top: 1rem;
+          width: 300px;
+          display:none;
           li {
             display: inline-block;
             &:after {
