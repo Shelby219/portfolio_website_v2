@@ -11,7 +11,7 @@
 
 // ===== sliding down project text ==== /
   $(document).ready(function(){
-    $( ".all-projects").find("div").hover(function(){
+    $( ".hover").hover(function(){
      $(".slidedown").slideDown("slow")
     },function() {$(".slidedown").finish().css('display','none')}
     );

@@ -603,10 +603,6 @@ main {
   }
 }
 
-.all-projects div h3 {
-  display: none;
-}
-
 .all-projects div .tech-stack,
 .all-projects div .resource {
   position: relative;
@@ -631,6 +627,7 @@ main {
   padding-left: 2rem;
   padding-top: 1rem;
   margin-right: 3em;
+  display: none;
 }
 
 #ytc {
