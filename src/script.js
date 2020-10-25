@@ -2,7 +2,8 @@
  function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
     
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    navs.forEach(nav => 
+      nav.classList.toggle('Navbar__ToggleShow'));
   }
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
@@ -10,10 +11,10 @@
 
 // ===== sliding down project text ==== /
   $(document).ready(function(){
-    $("#ytc").hover(function(){
-      $("#slidedown").slideDown("slow");
-      $("#slideup").slideUp("slow");
-    });
+    $( ".all-projects").find("div").hover(function(){
+     $(".slidedown").slideDown("slow")
+    },function() {$(".slidedown").finish().css('display','none')}
+    );
   });
 
 

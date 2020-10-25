@@ -603,13 +603,16 @@ main {
   }
 }
 
+.all-projects div h3 {
+  display: none;
+}
+
 .all-projects div .tech-stack,
 .all-projects div .resource {
   position: relative;
   left: 2rem;
   padding-top: 1rem;
   width: 300px;
-  display: none;
 }
 
 .all-projects div .tech-stack li,
