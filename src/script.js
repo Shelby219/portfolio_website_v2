@@ -8,14 +8,13 @@
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
 
-
 // ===== sliding down project text ==== /
-  $(document).ready(function(){
-    $( ".hover").hover(function(){
-     $(".slidedown").slideDown("slow")
-    },function() {$(".slidedown").finish().css('display','none')}
-    );
-  });
+  // $(document).ready(function(){
+  //   $( ".hover").hover(function(){
+  //    $(".slidedown").slideDown("slow")
+  //   },function() {$(".slidedown").finish().css('display','none')}
+  //   );
+  // });
 
 
 // ===== Scroll to Top ==== /

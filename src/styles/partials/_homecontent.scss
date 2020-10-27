@@ -1,11 +1,36 @@
-
 /*****WELCOME INTRO SECTION******/
+
 .intro-container {
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 200px;  
+    @include flex(column, center);
+    margin-top: 200px;    
+
+    h2 {
+        font-size: 4rem;
+        color: $white-color;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+    }
+    h1 {
+        font-size: 5em;
+        font-family: $heading-font-family;
+        font-weight: bold;
+    span.features-special {
+        color: $alternate-color;
+        font-size: 4rem;
+     }
+    }
     
+    p span.features-special {
+            color:$text-color;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    p span:nth-child(4).features-special {
+            color:$alternate-color;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: $heading-font-family;
+        }
 }
 
 .intro-sec1 {
@@ -13,40 +38,9 @@
     margin-right: 30px;
     margin-left: 30px;
 }
-section div.intro-sec1 img {
-    clip-path: circle(50% at 50% 50%);
-    width: 150px;
-    height: 150px;
-}
-.intro-container h2 {
-        font-size: 4rem;
-        color: $white-color;
-        -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-        
-    }
-.intro-container h1 {
-font-size: 5em;
-font-family: $heading-font-family;
-font-weight: bold;
-}
-    
-p span.features-special {
-color:$text-color;
-font-size: 2rem;
-font-weight: 600;
-}
-p span:nth-child(4).features-special {
-    color:$alternate-color;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: $heading-font-family;
-    }
 
-h1 span.features-special {
-color: $alternate-color;
-font-size: 4rem;
-}
+
+    
 /*******************************/
 
 /* Tablet Styles */ /** MAIN CONTENT */
@@ -55,8 +49,7 @@ font-size: 4rem;
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
    
-
-    .intro-sec1 {
+    .intro-sec1, .intro-text {
         margin-right: 200px;
         margin-left: 200px;
     }
@@ -66,8 +59,7 @@ font-size: 4rem;
 /* Desktop Styles */ /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
 
-  
-    .intro-sec1 {
+    .intro-sec1, .intro-text{
         margin-right: 200px;
         margin-left: 200px;
     }

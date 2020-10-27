@@ -1,22 +1,32 @@
 
 /*****ANIMATIONS******/
 
+/*****Welcome Animation******/
+.intro-text { 
+  margin: 5px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 0; 
+  position: absolute; 
+  font-size: 5em; 
+  color: white; 
+} 
 
-/*****Alternative HOVER ANIMATION******/
+.intro-text::before {  
+  content: attr(data-text); 
+  position: absolute; 
+  color: black; 
+  overflow: hidden; 
+  width: 0%; 
+  transition: 1s; 
+  animation: fill 3s linear;
+} 
 
-.footer-links:hover , .icons:hover, .blog-recent-posts a:hover {
-  border-bottom: solid 2px $alternate-color;    
-  color: $hover-color;
+@keyframes fill {
+  to {
+      width: 100%;   
+  }
 }
-/*****My work and blog posts ******/
-.read-more:hover, .arrow-right:hover, .project-description h4:hover{
-  background-color: $alternate-color;
-  border-radius: 30px; 
-  padding: 10px;
-  cursor: pointer;
-  color: $hover-color;
-}
-/*************************/
 
 
 /*****Hover ANIMATION******/
@@ -52,14 +62,14 @@
  /*********************************/  
 
 /*****SLIDE UP ANIMATION******/
-    .intro-sec1 {
+    .hello{
       animation-duration: 3s;
       animation-name: slideup;
       }
 
       @keyframes slideup {
           from {margin-bottom: 100%; width: 200%;}
-          to {       width: 100%;}
+          to {   width: 60%;}
       }
 
 /*****FADING ANIMATION******/
@@ -67,7 +77,7 @@
 @-moz-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
 @-webkit-keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
 
-.desktop-container, .core-container {
+.desktop-container {
     -webkit-animation:fadeIn ease-in 1; 
     animation:fadeIn ease-in 1;
     -webkit-animation-duration:1s;

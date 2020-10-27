@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <link href="./src/styles/main.css" rel="stylesheet" >
+        <link href="./src/styles/main.css" rel="stylesheet">
+        <link rel="icon" type="image/ico" href="./src/imgs/Letter_logo.png">
         <script src="https://kit.fontawesome.com/7edf7d6684.js" crossorigin="anonymous"></script>  <!-- SRI made my jquery not work for the return to top -->
     </head>
        
@@ -35,8 +36,7 @@
                             </li>
                             <li class="Navbar__Link">
                             <a class = "item item-underline" href="https://www.linkedin.com/in/shelby-el-rassi-dev/">linkedin</a>
-                            </li>
-                           
+                            </li>         
                         </ul>
                     </nav>
                 </header>
@@ -44,23 +44,30 @@
             <main>
             
                             <!-- Intro  (Hello, I am Shelby) -->
-                            <section class = "desktop-container">
+                            <section class = "desktop-container">  
                                 <div class= "intro-container"> 
+                                      <div>
+                                        <h2 data-text="Hello!" class= "intro-text">Hello!</h2>
+                                      </div>
                                         <h2 class= "intro-sec1">Hello!</h2>
-                                        <h1 class= "intro-sec1">I'm Shelby<span class= "features-special">.</span></h1>
+                                        <h1 class= "intro-sec1 hello">I'm Shelby<span class= "features-special">.</span></h1>
+                                        <h3 class= "intro-sec1">Full Stack Developer</h3>
                                     </div>
                                     <div class = "intro_paragraph">
-                                        <p class= "intro-sec1" >I love 
+                                        <p class= "intro-sec1 hello" >I love 
                                             <span class= "features-special" >coding</span> 
                                             and creating 
                                             <span class= "features-special" >websites</span> 
-                                            and <span class= "features-special">applications</span><span class= "features-special" >.</span>
+                                            and <span class= "features-special">applications.</span>
                                         </p>
-                                </div>
+                                        <div class= "intro-sec1">
+                                            Due to graduate from Coder Academy in January 2021, 
+                                            I am a Full Stack Developer, who loves creativity 
+                                            and problem solving with code.
+
+                                        </div>
+                                   </div> 
                             </section>
-                
-               
-          
                 </main>
             
                 <footer >
@@ -68,21 +75,21 @@
                         <p class = "footer-part1 " >Hey!</p> 
                     </div>
                         <div class = "footer-container">
-                                <div class = "footer-part2">
+                                <div class = "footer-part2 ">
                                     <p> Thanks for reaching the bottom of this page.  </p>
                                 </div>
                                 <div class = "footer-part3">
-                                    <p>Want to get in touch? <a class ="footer-links"  href="mailto:shelbyelrassi@gmail.com">Email me.</a></p>   
+                                    <p>Want to get in touch? <a class ="footer-links item-underline"  href="mailto:shelbyelrassi@gmail.com">Email me.</a></p>   
                                 </div>
                                 <div class = "footer-part4"> 
                                     <p>Find me elsewhere....</p>
                                     <div></div>
                                     <ul class="footer-icons ">
                                         <!-- icons from https://fontawesome.com -->
-                                        <li><a class="icons" href="https://github.com/Shelby219"><i class="fab fa-github" title="link to Github"></i></a></li>
-                                        <li><a class="icons" href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
-                                        <li><a class="icons" href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
-                                        <li><a class="icons" href="https://www.linkedin.com/in/shelby-el-rassi-dev/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
+                                        <li><a class="icons item-underline" href="https://github.com/Shelby219"><i class="fab fa-github " title="link to Github"></i></a></li>
+                                        <li><a class="icons item-underline" href="https://twitter.com/theartydev"><i class="fab fa-twitter" title="link to Twitter"></i></a></li>
+                                        <li><a class="icons item-underline" href="https://codepen.io/shelby219/"><i class="fab fa-codepen" title="Link to Codepen"></i></a></li>
+                                        <li><a class="icons item-underline" href="https://www.linkedin.com/in/shelby-el-rassi-dev/"><i class="fab fa-linkedin-in" title="Link to linkedin"></i></a></li>
                                     </ul>
                                 </div>
                         
@@ -94,7 +101,7 @@
                                 <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
                         </div> 
                 </footer>
-            <script src="./script.js"></script>
+            <script src="../src/script.js"></script>
     </body>
         	
 </html>
