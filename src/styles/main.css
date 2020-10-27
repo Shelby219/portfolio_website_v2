@@ -266,13 +266,13 @@ header img {
   font-size: 4rem;
 }
 
-.intro-container p span.features-special {
+.intro_paragraph p span.features-special {
   color: black;
   font-size: 2rem;
   font-weight: 600;
 }
 
-.intro-container p span:nth-child(4).features-special {
+.intro_paragraph p span:nth-child(4).features-special {
   color: #a0f2d7;
   font-size: 2rem;
   font-weight: 600;
@@ -283,6 +283,12 @@ header img {
   margin: 5px;
   margin-right: 30px;
   margin-left: 30px;
+}
+
+.intro-content {
+  margin-top: 2.5rem;
+  line-height: 1.7em;
+  font-size: 1rem;
 }
 
 /*******************************/
@@ -376,9 +382,9 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 350px;
+  height: 20em;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 0.5rem 0rem;
 }
 
 .all-projects div .tech-stack, .all-projects div .resource {
@@ -406,7 +412,7 @@ header img {
 
 @media only screen and (min-width: 601px) {
   .all-projects div {
-    margin: 10px 10px;
+    margin: 0.5rem 0.5rem;
   }
 }
 
@@ -537,13 +543,21 @@ header img {
 
 .project-heading h3 {
   left: 0;
+  padding-left: 15px;
 }
 
 /* Phone Styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95vw;
+  }
+}
+
 /* Tablet Styles */
 @media only screen and (min-device-width: 601px) and (-webkit-min-device-pixel-ratio: 1) {
   .container {
     overflow-x: hidden;
+    width: 75vw;
   }
 }
 
@@ -551,6 +565,9 @@ header img {
 @media only screen and (min-width: 1201px) {
   .container {
     overflow-x: hidden;
+  }
+  .container .container {
+    width: 65vw;
   }
 }
 
@@ -790,7 +807,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: sans-serif;
   width: 100vw;
   height: 100vh;
   font-family: "Montserrat", sans-serif;

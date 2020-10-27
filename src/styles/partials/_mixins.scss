@@ -7,14 +7,13 @@
     flex-direction: $direction;
   }
 
-
-
  @mixin background($colour, $url) {
     background-image: url(#{$url});
     background-position: center;
     background-size: cover;
     color: transparent;
     border: 1px solid black;
+    
     &:hover {
       color: black;
       background: $colour;
