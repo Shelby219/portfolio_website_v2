@@ -2,10 +2,26 @@
  function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
     
-    navs.forEach(nav => 
-      nav.classList.toggle('Navbar__ToggleShow'));
-  }
+      navs.forEach(nav => 
+        nav.classList.toggle('Navbar__ToggleShow')
+        );
+      navs.forEach((link, index) => {
+          link.style.animation = `fadeIn 0.5s ease forwards ${index / 7}s`;
+        })
+    }
+    //animation: fadeIn 0.5s ease forwards;
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+
+//   $(document).ready(function(){
+//     $(".Navbar__Link-toggle").click(function(){
+//       $(".Navbar__ToggleShow").slideToggle();
+//     });
+//  });
+  // $(document).ready(function(){
+  //   $('.Navbar__Link-toggle').click(function() {
+  //       $('.Navbar__ToggleShow').toggle();
+  //   });
+  //   });
 
 
 // ===== sliding down project text ==== /

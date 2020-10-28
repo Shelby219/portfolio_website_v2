@@ -3,6 +3,7 @@
 .intro-container {
     @include flex(column, center);
     margin-top: 200px;    
+  
 
     h2 {
         font-size: 4rem;
@@ -18,10 +19,8 @@
         color: $alternate-color;
         font-size: 4rem;
      }
-    }
-    
-   
-   
+
+    }   
 }
 .intro_paragraph{
     p span.features-special {
@@ -52,11 +51,10 @@
 /*******************************/
 
 /* Tablet Styles */ /** MAIN CONTENT */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-   
+@media only screen and (min-width: 768px)  {
+    .desktop-container  {
+        margin: 0 20 0 20px;
+    }
     .intro-sec1, .intro-text {
         margin-right: 200px;
         margin-left: 200px; 
@@ -66,7 +64,7 @@
 
 /* Desktop Styles */ /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
-
+   
     .intro-sec1, .intro-text{
         margin-right: 200px;
         margin-left: 200px;

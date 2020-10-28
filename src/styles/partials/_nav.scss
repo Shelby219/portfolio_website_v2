@@ -51,6 +51,7 @@ header img {
 
   .Navbar__Link-toggle {
     display: none;
+    transition:  2s ease;
   }
   
   @media only screen and (max-width: 768px) {
@@ -68,6 +69,7 @@ header img {
   
     .Navbar__ToggleShow {
       display: flex;
+      
     }
     .Navbar__Link-toggle {
       align-self: flex-end;
