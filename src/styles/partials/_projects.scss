@@ -102,7 +102,7 @@
   color: white; 
 } 
 
-.project::before {  
+.project::before {   
   content: attr(data-text); 
   position: absolute; 
   color: black; 
