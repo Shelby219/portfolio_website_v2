@@ -12,6 +12,14 @@
     //animation: fadeIn 0.5s ease forwards;
   document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
+  $(".all-projects div").hide().each(function(i) {
+    $(this).delay(i*1000).fadeIn(1000);
+  });
+
+  
+  if (!Modernizr.svg) {
+    $(".logo img").attr("src", "images/logo.png");
+  }
 //   $(document).ready(function(){
 //     $(".Navbar__Link-toggle").click(function(){
 //       $(".Navbar__ToggleShow").slideToggle();

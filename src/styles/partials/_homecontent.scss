@@ -4,7 +4,6 @@
     @include flex(column, center);
     margin-top: 200px;    
   
-
     h2 {
         font-size: 4rem;
         color: $white-color;
@@ -15,12 +14,16 @@
         font-size: 5em;
         font-family: $heading-font-family;
         font-weight: bold;
+        margin-bottom: 25px;
     span.features-special {
         color: $alternate-color;
         font-size: 4rem;
      }
 
-    }   
+    } 
+    h3{
+        margin-bottom: 30px; 
+    }  
 }
 .intro_paragraph{
     p span.features-special {
@@ -52,9 +55,7 @@
 
 /* Tablet Styles */ /** MAIN CONTENT */
 @media only screen and (min-width: 768px)  {
-    .desktop-container  {
-        margin: 0 20 0 20px;
-    }
+    
     .intro-sec1, .intro-text {
         margin-right: 200px;
         margin-left: 200px; 

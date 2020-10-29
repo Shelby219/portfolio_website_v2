@@ -23,6 +23,7 @@ body {
     height: 100vh;
     font-family: $body-font-family;
     background: linear-gradient(90deg, $background-color 50%, $white-color 50%);
+   
 }
 
 main {
@@ -31,3 +32,4 @@ main {
     max-width: 1000px;
     margin-bottom: 300px;
 }
+

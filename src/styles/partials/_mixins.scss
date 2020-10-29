@@ -12,8 +12,12 @@
     background-position: center;
     background-size: cover;
     color: transparent;
-   
+    border-radius: 5px;
 
+    /* Phone Styles */ 
+    @media only screen and (max-width: 600px) {
+        max-width: 275px; 
+      }
     
     &:hover {
       color: black;
@@ -22,3 +26,4 @@
     }
    
   }
+

@@ -272,8 +272,8 @@ header img {
   text-decoration: none;
   color: white;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
 }
 
 .all-projects div {
@@ -328,6 +328,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #ytc {
+    max-width: 275px;
+  }
 }
 
 #ytc:hover {
@@ -342,6 +350,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #taskio {
+    max-width: 275px;
+  }
 }
 
 #taskio:hover {
@@ -356,6 +372,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #readme {
+    max-width: 275px;
+  }
 }
 
 #readme:hover {
@@ -370,6 +394,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #pokemon {
+    max-width: 275px;
+  }
 }
 
 #pokemon:hover {
@@ -384,6 +416,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #rpsls {
+    max-width: 275px;
+  }
 }
 
 #rpsls:hover {
@@ -398,6 +438,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #old_port {
+    max-width: 275px;
+  }
 }
 
 #old_port:hover {
@@ -412,6 +460,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #new_port {
+    max-width: 275px;
+  }
 }
 
 #new_port:hover {
@@ -426,6 +482,14 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
+  border-radius: 5px;
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 600px) {
+  #pokemon {
+    max-width: 275px;
+  }
 }
 
 #pokemon:hover {
@@ -482,7 +546,7 @@ header img {
 /* Phone Styles */
 @media only screen and (max-width: 600px) {
   .container {
-    width: 55vw;
+    width: 40px;
   }
 }
 
@@ -504,6 +568,7 @@ header img {
   }
 }
 
+/* Individual Project Styles */
 /*****WELCOME INTRO SECTION******/
 .intro-container {
   display: -webkit-box;
@@ -532,11 +597,16 @@ header img {
   font-size: 5em;
   font-family: sans-serif;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .intro-container h1 span.features-special {
   color: #a0f2d7;
   font-size: 4rem;
+}
+
+.intro-container h3 {
+  margin-bottom: 30px;
 }
 
 .intro_paragraph p span.features-special {
@@ -568,9 +638,6 @@ header img {
 /* Tablet Styles */
 /** MAIN CONTENT */
 @media only screen and (min-width: 768px) {
-  .desktop-container {
-    margin: 0 20 0 20px;
-  }
   .intro-sec1, .intro-text {
     margin-right: 200px;
     margin-left: 200px;

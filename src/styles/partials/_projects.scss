@@ -2,18 +2,21 @@
 .container {
     @include flex(column, center);
     width: 65vw;
+   
     max-width: 1000px;
     margin-bottom: 200px;
-    margin-top: 100px;    
+    margin-top: 100px;   
+   
   }
 
 .all-projects{
     margin-top: 5%;
     @include flex(row, flex-start);
+    
     a {
         text-decoration: none;
         color: white;
-        flex: 1 1 25%;
+        flex: 1 1 30%;
     }
     div {
         @include flex(column, center);
@@ -121,7 +124,7 @@
 /* Phone Styles */ 
 @media only screen and (max-width: 600px) {
     .container {
-      width: 55vw;
+      width: 40px;
     }
   }
 
@@ -145,3 +148,5 @@ and (-webkit-min-device-pixel-ratio: 1) {
  }
 }
 
+
+/* Individual Project Styles */ 
