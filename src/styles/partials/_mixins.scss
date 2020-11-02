@@ -13,7 +13,9 @@
     background-size: cover;
     color: transparent;
     border-radius: 15px;
-    
+  @media only screen and (max-width: 600px)  {
+     width: 275px; 
+  }
     &:hover {
       color: black;
       background: $colour;

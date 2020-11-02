@@ -331,6 +331,12 @@ header img {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #ytc {
+    width: 275px;
+  }
+}
+
 #ytc:hover {
   color: black;
   background: #a0f2d7;
@@ -344,6 +350,12 @@ header img {
   background-size: cover;
   color: transparent;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #taskio {
+    width: 275px;
+  }
 }
 
 #taskio:hover {
@@ -361,6 +373,12 @@ header img {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #readme {
+    width: 275px;
+  }
+}
+
 #readme:hover {
   color: black;
   background: #a0f2d7;
@@ -374,6 +392,12 @@ header img {
   background-size: cover;
   color: transparent;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #pokemon {
+    width: 275px;
+  }
 }
 
 #pokemon:hover {
@@ -391,6 +415,12 @@ header img {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #rpsls {
+    width: 275px;
+  }
+}
+
 #rpsls:hover {
   color: black;
   background: #a0f2d7;
@@ -404,6 +434,12 @@ header img {
   background-size: cover;
   color: transparent;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #old_port {
+    width: 275px;
+  }
 }
 
 #old_port:hover {
@@ -421,6 +457,12 @@ header img {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #new_port {
+    width: 275px;
+  }
+}
+
 #new_port:hover {
   color: black;
   background: #a0f2d7;
@@ -434,6 +476,12 @@ header img {
   background-size: cover;
   color: transparent;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #pokemon {
+    width: 275px;
+  }
 }
 
 #pokemon:hover {
