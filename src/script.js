@@ -9,17 +9,13 @@
           link.style.animation = `fadeIn 0.5s ease forwards ${index / 7}s`;
         })
     }
-    //animation: fadeIn 0.5s ease forwards;
-  document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+  //animation: fadeIn 0.5s ease forwards;
+document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
   $(".all-projects div").hide().each(function(i) {
     $(this).delay(i*1000).fadeIn(1000);
   });
-
   
-  if (!Modernizr.svg) {
-    $(".logo img").attr("src", "images/logo.png");
-  }
 //   $(document).ready(function(){
 //     $(".Navbar__Link-toggle").click(function(){
 //       $(".Navbar__ToggleShow").slideToggle();
@@ -30,17 +26,18 @@
   //       $('.Navbar__ToggleShow').toggle();
   //   });
   //   });
-
-
-// ===== sliding down project text ==== /
-  // $(document).ready(function(){
-  //   $( ".hover").hover(function(){
-  //    $(".slidedown").slideDown("slow")
-  //   },function() {$(".slidedown").finish().css('display','none')}
-  //   );
-  // });
-
-
+  // ===== Scroll to next home section ==== /
+  $(document).ready(function() {
+    $(".more-button").click(function() {
+      $("body,html").animate(
+        {
+          scrollTop: $(".intro-content").offset().top
+        },
+        200 //speed
+      );
+    });
+  });
+ 
 // ===== Scroll to Top ==== /
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px

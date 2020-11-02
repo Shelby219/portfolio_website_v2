@@ -8,9 +8,9 @@
   margin-left: 30px;
   padding: 0; 
   position: absolute; 
-
   font-size: 5em; 
   color: white; 
+  z-index: -1;
 } 
 
 .intro-text::before {  
@@ -21,6 +21,7 @@
   width: 0%; 
   transition: 1s; 
   animation: fill 3s linear;
+
 } 
 
 @keyframes fill {
