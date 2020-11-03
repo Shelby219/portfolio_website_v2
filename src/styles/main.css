@@ -252,6 +252,21 @@ header img {
   margin-top: 100px;
 }
 
+.container .project-heading {
+  margin-bottom: 80px;
+  padding: 10px;
+  width: 65vw;
+  max-width: 1000px;
+}
+
+.container .project-heading h3 {
+  text-align: left;
+}
+
+.container h4 {
+  margin-left: 10px;
+}
+
 .all-projects {
   margin-top: 5%;
   display: -webkit-box;
@@ -491,21 +506,11 @@ header img {
   transition: .5s ease-in;
 }
 
-.project-heading {
-  margin-bottom: 80px;
-  padding: 10px;
-  width: 65vw;
-  max-width: 1000px;
-}
-
-.project-heading h3 {
-  text-align: left;
-}
-
+/*project heading animation*/
 .project {
   position: absolute;
   z-index: -1;
-  font-size: 4em;
+  font-size: 3em;
   color: white;
 }
 
@@ -633,7 +638,7 @@ header img {
 
 .intro-content {
   margin-top: 5em;
-  line-height: 1.7em;
+  line-height: 2em;
   font-size: 1.2rem;
 }
 
@@ -829,8 +834,12 @@ header img {
 .footer-links {
   text-decoration: none;
   color: #a0f2d7;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 /* Tablet Styles */
@@ -851,7 +860,6 @@ header img {
   }
   .footer-icons {
     margin-right: 50px;
-    margin-left: -20px;
     margin-top: -15px;
   }
   .footer-base {
@@ -877,7 +885,7 @@ header img {
   }
   .footer-icons {
     margin-right: 50px;
-    margin-left: -20px;
+    margin-left: -25px;
     margin-top: -15px;
   }
   .footer-base {

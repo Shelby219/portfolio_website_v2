@@ -26,6 +26,7 @@
 
 .footer-part4 {
     display: inline-block;
+    
 }
 
 .footer-icons {
@@ -58,9 +59,12 @@
 .footer-links {
     text-decoration: none;
     color: $alternate-color;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
-
+    background-color: black;
+    color:white;
+    padding: 5px;
+    border-radius: 25px;
 }
 
 /* Tablet Styles */ /* FOOTER */
@@ -85,7 +89,7 @@
 
     .footer-icons {
         margin-right: 50px;
-        margin-left: -20px;
+
         margin-top: -15px;
     }
     .footer-base {
@@ -109,7 +113,7 @@
 
     .footer-icons {
         margin-right: 50px;
-        margin-left: -20px;
+        margin-left: -25px;
         margin-top: -15px;
     }
     .footer-base {
