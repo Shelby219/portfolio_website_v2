@@ -31,7 +31,7 @@ document.querySelector('.Navbar__Link-toggle').addEventListener('click', classTo
     $(".more-button").click(function() {
       $("body,html").animate(
         {
-          scrollTop: $(".intro-content").offset().top
+          scrollTop: $(".intro-content").offset().top - 120
         },
         200 //speed
       );
