@@ -312,7 +312,7 @@ header img {
 .all-projects div .tech-stack, .all-projects div .resource {
   position: relative;
   padding-top: 1em;
-  width: 300px;
+  width: 250px;
   left: 2rem;
 }
 
@@ -339,17 +339,10 @@ header img {
 }
 
 #ytc {
-  background-image: url(../imgs/ytc.png);
+  background-image: url(../imgs/ytc.jpg);
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #ytc {
-    width: 275px;
-  }
 }
 
 #ytc:hover {
@@ -364,13 +357,6 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #taskio {
-    width: 275px;
-  }
 }
 
 #taskio:hover {
@@ -381,17 +367,10 @@ header img {
 }
 
 #readme {
-  background-image: url(../imgs/readme.png);
+  background-image: url(../imgs/readme.jpg);
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #readme {
-    width: 275px;
-  }
 }
 
 #readme:hover {
@@ -406,13 +385,6 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #pokemon {
-    width: 275px;
-  }
 }
 
 #pokemon:hover {
@@ -423,17 +395,10 @@ header img {
 }
 
 #rpsls {
-  background-image: url(../imgs/rpsls.png);
+  background-image: url(https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png);
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #rpsls {
-    width: 275px;
-  }
 }
 
 #rpsls:hover {
@@ -448,13 +413,6 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #old_port {
-    width: 275px;
-  }
 }
 
 #old_port:hover {
@@ -469,13 +427,6 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #new_port {
-    width: 275px;
-  }
 }
 
 #new_port:hover {
@@ -490,13 +441,6 @@ header img {
   background-position: center;
   background-size: cover;
   color: transparent;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #pokemon {
-    width: 275px;
-  }
 }
 
 #pokemon:hover {
@@ -833,13 +777,10 @@ header img {
 
 .footer-links {
   text-decoration: none;
-  color: #a0f2d7;
+  color: black;
   font-size: 1rem;
   font-weight: 600;
-  background-color: black;
-  color: white;
   padding: 5px;
-  border-radius: 25px;
 }
 
 /* Tablet Styles */

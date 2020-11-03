@@ -44,7 +44,7 @@
         .tech-stack, .resource {
           position: relative;
           padding-top: 1em;
-          width: 300px;
+          width: 250px;
           left: 2rem;
           
           li {
@@ -70,7 +70,7 @@
 }
 
 #ytc {
-    @include background($background-color, "../imgs/ytc.png");
+    @include background($background-color, "../imgs/ytc.jpg");
   }
 
 #taskio {
@@ -78,13 +78,13 @@
   }
 
 #readme {
-    @include background($background-color, "../imgs/readme.png");
+    @include background($background-color, "../imgs/readme.jpg");
   }
 #pokemon {
     @include background($background-color, "../imgs/pokemon.png");
   }
 #rpsls {
-    @include background($background-color, "../imgs/rpsls.png");
+    @include background($background-color, "https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png");
   }
 #old_port {
     @include background($background-color, "../imgs/old_port.png");
