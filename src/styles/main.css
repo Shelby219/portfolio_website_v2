@@ -1,41 +1,56 @@
 /*****ANIMATIONS******/
-/*****Welcome Animation******/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200;400;500;600&display=swap");
-.intro-text {
-  margin: 5px;
-  margin-right: 30px;
-  margin-left: 30px;
-  padding: 0;
-  position: absolute;
-  font-size: 5em;
-  color: white;
-  z-index: -1;
-}
-
-.intro-text::before {
-  content: attr(data-text);
-  position: absolute;
+.typewriter h1, .project {
   color: #aa9f26;
   overflow: hidden;
-  width: 0%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-animation: fill 3s linear;
-          animation: fill 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  font-size: 5em;
+  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-@-webkit-keyframes fill {
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
   to {
     width: 100%;
   }
 }
 
-@keyframes fill {
-  to {
-    width: 100%;
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
 
@@ -511,40 +526,14 @@ header img {
 
 /*project heading animation*/
 .project {
-  position: absolute;
-  z-index: -1;
-  font-size: 3.5em;
-  color: white;
-}
-
-.project::before {
-  content: attr(data-text);
-  position: absolute;
-  color: #aa9f26;
-  overflow: hidden;
-  width: 0%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-animation: fillup 3s linear;
-          animation: fillup 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fillup {
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes fillup {
-  to {
-    width: 100%;
-  }
+  font-size: 3em;
 }
 
 /* Phone Styles */
 @media only screen and (max-width: 600px) {
+  .project {
+    font-size: 2em;
+  }
   .container a {
     width: 250px;
   }
@@ -617,18 +606,12 @@ header img {
   margin-top: 200px;
 }
 
-.intro-container h2 {
-  font-size: 4rem;
-  color: white;
-  font-family: "Trispace", sans-serif;
-}
-
 .intro-container h1 {
   font-size: 5em;
   font-family: "Trispace", sans-serif;
   font-weight: bold;
   margin-bottom: 25px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .intro-container h1 span.features-special {
@@ -725,7 +708,7 @@ header img {
 /* Tablet Styles */
 /** MAIN CONTENT */
 @media only screen and (min-width: 768px) {
-  .intro-sec1, .intro-text {
+  .intro-sec1, .typewriter {
     margin-right: 200px;
     margin-left: 200px;
   }
@@ -734,7 +717,7 @@ header img {
 /* Desktop Styles */
 /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
-  .intro-sec1, .intro-text {
+  .intro-sec1, .typewriter {
     margin-right: 200px;
     margin-left: 200px;
   }

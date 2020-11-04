@@ -34,6 +34,7 @@
         text-decoration: none;
         color: white;
         flex: 1 1 50%;
+       
         
     }
     div {
@@ -41,7 +42,6 @@
         height: 20em;
         overflow: hidden;
         margin: 0.5rem 0rem;
-       
         
         .tech-stack, .resource {
           position: relative;
@@ -102,35 +102,16 @@
 
 /*project heading animation*/
 .project{ 
-  position: absolute;    
-  z-index: -1;
-  font-size: 3.5em; 
-  color: $white-color;
-  //-webkit-text-stroke-width: 3px;
-  //-webkit-text-stroke-color: black;
+  font-size: 3em; 
+  
 } 
-
-.project::before {   
-  content: attr(data-text); 
-  position: absolute; 
-  color: $alternate-color; 
-  overflow: hidden; 
-  width: 0%; 
-  transition: 1s; 
-  animation: fillup 3s linear;
-  animation-fill-mode: forwards;
-} 
-
-@keyframes fillup {
-  to {
-      width: 100%;   
-  }
-}
-
 
 
 /* Phone Styles */ 
 @media only screen and (max-width: 600px) {
+  .project{ 
+    font-size: 2em; 
+  } 
    .container{
      a {
        width: 250px;

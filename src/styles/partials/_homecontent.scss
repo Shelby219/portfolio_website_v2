@@ -4,19 +4,13 @@
     @include flex(column, center);
     margin-top: 200px;    
   
-    h2 {
-        font-size: 4rem;
-        color: $white-color;
-       // -webkit-text-stroke-width: 3px;
-       // -webkit-text-stroke-color: black;
-       font-family: $heading-font-family;
-    }
+   
     h1 {
         font-size: 5em;
         font-family: $heading-font-family;
         font-weight: bold;
         margin-bottom: 25px;
-        margin-top: 100px;
+        margin-top: 50px;
     span.features-special {
         color: $alternate-color;
         font-size: 6rem;
@@ -91,7 +85,7 @@
 
 /* Tablet Styles */ /** MAIN CONTENT */
 @media only screen and (min-width: 768px)  {
-    .intro-sec1, .intro-text {
+    .intro-sec1, .typewriter {
         margin-right: 200px;
         margin-left: 200px; 
     }
@@ -99,7 +93,7 @@
  
 /* Desktop Styles */ /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
-    .intro-sec1, .intro-text{
+    .intro-sec1, .typewriter{
         margin-right: 200px;
         margin-left: 200px;
     }

@@ -16,22 +16,12 @@ document.querySelector('.Navbar__Link-toggle').addEventListener('click', classTo
     $(this).delay(i*1000).fadeIn(1000);
   });
   
-//   $(document).ready(function(){
-//     $(".Navbar__Link-toggle").click(function(){
-//       $(".Navbar__ToggleShow").slideToggle();
-//     });
-//  });
-  // $(document).ready(function(){
-  //   $('.Navbar__Link-toggle').click(function() {
-  //       $('.Navbar__ToggleShow').toggle();
-  //   });
-  //   });
   // ===== Scroll to next home section ==== /
   $(document).ready(function() {
     $(".more-button").click(function() {
       $("body,html").animate(
         {
-          scrollTop: $(".intro-content").offset().top - 120
+          scrollTop: $(".intro-content").offset().top -120
         },
         200 //speed
       );
