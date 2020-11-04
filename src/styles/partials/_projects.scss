@@ -146,11 +146,52 @@ and (-webkit-min-device-pixel-ratio: 1) {
 .one-projects{
   margin-top: 5%;
   @include flex(row, flex-start);
-  
-  div {
-      @include flex(column, center);
-      
+  .main-project-heading{
+    .project-single{
+      font-size: 3em;
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 30px 0px 30px 0px;
+    }
+
   }
   
+  .resources{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    a {
+      display: inline-block;
+      &:after {
+        content: " / ";
+      }
+    }
+  }
 
+  .tech-stack {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: $heading-font-family;
+    @include flex(row, flex-start);
+    li {
+        @include flex(column, center);
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 10px 10px 10px 0px;
+        font-size: .75em;
+        background-color: black;
+        color: white;
+    }
 }
+   img{
+     
+     margin: 30px 0px 30px 0px;
+     width: 50%;
+   }
+   .content{
+     margin-top: 20px;
+     margin-bottom: 20px;
+   }
+
+}    
