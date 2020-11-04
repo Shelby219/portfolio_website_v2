@@ -29,24 +29,31 @@ header img {
     text-decoration: none;
     margin-left:auto;
     text-decoration: none;
+    border-bottom: 1px solid black;
+    li:nth-child(2), li:nth-child(3), li:nth-child(4){
+      border-left: 1px solid black;
+    }
+    .item {
+      text-decoration: none;
+      display: -webkit-box;    
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px;
+      color: $text-color;
+      font-weight: 600;
+      font-family: $heading-font-family;
+    }
   }
-  .item {
-    text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    
-    padding: 10px;
-    color: $text-color;
-    font-weight: 600;
-  }
+  
   .se-logo {
     width: 150px;
     padding: 15px;
     border-radius: 50px;
     border: 2px solid black;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-family: $heading-font-family;
+    
   }
 
   .Navbar__Link-toggle {
@@ -61,10 +68,14 @@ header img {
       text-decoration: none;
       padding: 25px;
     }
-    .Navbar__Items {
+    .Navbar__Items {   
       display:none;
       margin-left:0;
       text-align: center;
+    
+      li:nth-child(2), li:nth-child(3), li:nth-child(4){
+        border-left: none;
+      }
     }
   
     .Navbar__ToggleShow {
@@ -87,5 +98,6 @@ header img {
         text-decoration: none;
         display: flex;
         justify-content: center;
+        
       }
   }

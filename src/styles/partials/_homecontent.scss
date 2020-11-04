@@ -7,19 +7,21 @@
     h2 {
         font-size: 4rem;
         color: $white-color;
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: black;
+       // -webkit-text-stroke-width: 3px;
+       // -webkit-text-stroke-color: black;
+       font-family: $heading-font-family;
     }
     h1 {
         font-size: 5em;
         font-family: $heading-font-family;
         font-weight: bold;
         margin-bottom: 25px;
+        margin-top: 100px;
     span.features-special {
         color: $alternate-color;
-        font-size: 4rem;
+        font-size: 6rem;
      }
-
+    
     } 
     h3{
         font-size: 2em;
@@ -60,12 +62,14 @@
     margin-top: 5em;
     line-height: 2em;
     font-size: 1.2rem;
-
+    z-index: -1;
     p{
         margin-top: 25px;
     }
     .stack {
-        margin-top: 25px;
+        margin-top: 75px;
+        margin-bottom: 50px;
+        font-family: $heading-font-family;
         @include flex(row, center);
         span {
             @include flex(column, center);
@@ -76,6 +80,7 @@
             font-size: .75em;
             background-color: black;
             color: white;
+           
         }
     }
     

@@ -12,6 +12,7 @@
       padding: 10px;
       width: 65vw;
       max-width: 1000px;
+      font-family: $heading-font-family;
       h3{
           
           text-align: left;
@@ -32,7 +33,7 @@
     a {
         text-decoration: none;
         color: white;
-        flex: 1 1 30%;
+        flex: 1 1 50%;
         
     }
     div {
@@ -101,16 +102,18 @@
 
 /*project heading animation*/
 .project{ 
-  position: absolute; 
+  position: absolute;    
   z-index: -1;
-  font-size: 3em; 
-  color: white; 
+  font-size: 3.5em; 
+  color: $white-color;
+  //-webkit-text-stroke-width: 3px;
+  //-webkit-text-stroke-color: black;
 } 
 
 .project::before {   
   content: attr(data-text); 
   position: absolute; 
-  color: black; 
+  color: $alternate-color; 
   overflow: hidden; 
   width: 0%; 
   transition: 1s; 
@@ -128,9 +131,11 @@
 
 /* Phone Styles */ 
 @media only screen and (max-width: 600px) {
-    .container {
-      width: 40px;
-    }
+   .container{
+     a {
+       width: 250px;
+     }
+   }
   }
 
 /* Tablet Styles */ 
@@ -155,3 +160,16 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 
 /* Individual Project Styles */ 
+
+
+.one-projects{
+  margin-top: 5%;
+  @include flex(row, flex-start);
+  
+  div {
+      @include flex(column, center);
+      
+  }
+  
+
+}
