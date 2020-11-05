@@ -718,12 +718,14 @@ header img {
 
 .one-projects .project-content .content {
   margin: 20px;
+  padding: 10px;
   font-size: .9em;
   letter-spacing: .08em;
+  line-height: 1.5em;
 }
 
 /* Tablet Styles */
-@media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
   .project-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -732,13 +734,6 @@ header img {
   }
   .project-content img {
     width: 100%;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 1024px) {
-  .project-content img {
-    width: 90%;
   }
 }
 

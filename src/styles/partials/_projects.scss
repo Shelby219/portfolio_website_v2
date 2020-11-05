@@ -199,8 +199,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
    }
    .content{
      margin: 20px;
+     padding: 10px;
      font-size: .9em;
      letter-spacing: .08em;
+     line-height: 1.5em;
    }
  }
 
@@ -208,7 +210,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 /* Tablet Styles */ 
 @media only screen 
-and (max-width: 769px) 
+and (max-width: 1025px) 
 and (-webkit-min-device-pixel-ratio: 1) {
       .project-content {
         flex-flow: row wrap;
@@ -218,16 +220,5 @@ and (-webkit-min-device-pixel-ratio: 1) {
          }
       }
             
-}
-/* Desktop Styles */ 
-@media only screen and (min-width:1024px) {
-  .project-content {
-
-    img{
-       width: 90%;
-       
-     }
-    
-  }
 }
 
