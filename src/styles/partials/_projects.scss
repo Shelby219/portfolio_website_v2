@@ -149,11 +149,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
       margin-bottom: 5px;
     }
     p {
-      margin: 40px 0px 40px 0px;
+      margin: 40px 0px 20px 0px;
     }
 
   }
-
+  p {
+    margin: 20px 0px 40px 0px;
+  }
   .resources{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -172,8 +174,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 
   .tech-stack {
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-family: $heading-font-family;
     @include flex(row, flex-start);
     li {
@@ -189,8 +191,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 .project-content {
   display: flex;
-  
-  background-color: lightgray;
+  background-color: #F0FBDD;
   img{
     margin: 5px 0px 5px 0px;
    
@@ -199,6 +200,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
    .content{
      margin: 20px;
      font-size: .9em;
+     letter-spacing: .08em;
    }
  }
 
