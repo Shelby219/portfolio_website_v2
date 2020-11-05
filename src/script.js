@@ -1,7 +1,6 @@
 
  function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
-    
       navs.forEach(nav => 
         nav.classList.toggle('Navbar__ToggleShow')
         );
@@ -12,10 +11,11 @@
   //animation: fadeIn 0.5s ease forwards;
 document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
+//fade in each project gradually
   $(".all-projects div").hide().each(function(i) {
     $(this).delay(i*1000).fadeIn(1000);
   });
-  
+
   // ===== Scroll to next home section ==== /
   $(document).ready(function() {
     $(".more-button").click(function() {

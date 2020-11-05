@@ -29,20 +29,17 @@
 .all-projects{
     margin-top: 5%;
     @include flex(row, flex-start);
-    
+    background-color: lightgray;
     a {
         text-decoration: none;
         color: white;
-        flex: 1 1 50%;
-       
-        
+        flex: 1 1 50%;  
     }
     div {
         @include flex(column, center);
         height: 20em;
         overflow: hidden;
         margin: 0.5rem 0rem;
-        
         .tech-stack, .resource {
           position: relative;
           padding-top: 1em;
@@ -102,7 +99,7 @@
 
 /*project heading animation*/
 .project{ 
-  font-size: 3em; 
+  font-size: 4em; 
   
 } 
 
@@ -152,20 +149,26 @@ and (-webkit-min-device-pixel-ratio: 1) {
       margin-bottom: 5px;
     }
     p {
-      margin: 30px 0px 30px 0px;
+      margin: 40px 0px 40px 0px;
     }
 
   }
-  
+
   .resources{
     margin-top: 20px;
     margin-bottom: 20px;
+   
     a {
       display: inline-block;
       &:after {
         content: " / ";
       }
+      &:hover{ 
+        color: $alternate-color;
+        cursor: pointer;
+      }
     }
+    
   }
 
   .tech-stack {
@@ -184,14 +187,45 @@ and (-webkit-min-device-pixel-ratio: 1) {
         color: white;
     }
 }
-   img{
-     
-     margin: 30px 0px 30px 0px;
-     width: 50%;
+.project-content {
+  display: flex;
+  
+  background-color: lightgray;
+  img{
+    margin: 5px 0px 5px 0px;
+   
+     padding: 20px;
    }
    .content{
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin: 20px;
+     font-size: .9em;
    }
+ }
 
 }    
+
+/* Tablet Styles */ 
+@media only screen 
+and (max-width: 769px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+      .project-content {
+        flex-flow: row wrap;
+        img{
+           width: 100%;
+          
+         }
+      }
+            
+}
+/* Desktop Styles */ 
+@media only screen and (min-width:1024px) {
+  .project-content {
+
+    img{
+       width: 90%;
+       
+     }
+    
+  }
+}
+
