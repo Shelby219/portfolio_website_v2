@@ -1,8 +1,7 @@
 
 .container {
     @include flex(column, center);
-    width: 65vw;
-   
+    width: 90vw;
     max-width: 1000px;
     margin-bottom: 200px;
     margin-top: 100px;   
@@ -10,14 +9,10 @@
     .project-heading{
       margin-bottom: 80px;
       padding: 10px;
-      width: 65vw;
       max-width: 1000px;
       font-family: $heading-font-family;
       h3{
-          
           text-align: left;
-         
-         
       }
     }
     h4{
@@ -120,10 +115,7 @@
 @media only screen 
 and (min-device-width: 601px) 
 and (-webkit-min-device-pixel-ratio: 1) {
-    .container {
-        overflow-x: hidden;
-        width: 75vw;
-      }
+ 
       
 }
 /* Desktop Styles */ 
