@@ -60,11 +60,12 @@
     margin-top: 5em;
     line-height: 2em;
     font-size: 1.2rem;
-    z-index: -1;
+   
     p{
         margin-top: 25px;
     }
     .stack {
+        
         margin-top: 75px;
         margin-bottom: 50px;
         font-family: $heading-font-family;
@@ -78,7 +79,7 @@
             font-size: .75em;
             background-color: black;
             color: white;
-           
+            
         }
     }
     

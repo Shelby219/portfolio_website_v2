@@ -17,6 +17,7 @@
     font-family:  $heading-font-family;
     font-weight: bold;
     font-size: 2rem;
+    color: orange;
 }
  .footer-part2, .footer-part3, .footer-part4, .footer-icons, .footer-base {
     @include flex(row, flex-start); 

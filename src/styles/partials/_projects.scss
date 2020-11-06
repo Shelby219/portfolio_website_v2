@@ -2,44 +2,50 @@
 .container {
     @include flex(column, center);
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1200px;
     margin-bottom: 200px;
     margin-top: 100px;   
    
     .project-heading{
-      margin-bottom: 80px;
+      margin-bottom: 30px;
       padding: 10px;
       max-width: 1000px;
       font-family: $heading-font-family;
-      h3{
-          text-align: left;
+      .project{
+        font-size: 3em;
+        margin-bottom: 5px;
+      }
+      p {
+        margin: 40px 0px 20px 0px;
       }
     }
     h4{
       margin-left: 10px;
     }
-
 }
 
 .all-projects{
     margin-top: 5%;
     @include flex(row, flex-start);
-    background-color: lightgray;
+   
     a {
         text-decoration: none;
         color: white;
         flex: 1 1 50%;  
+        
     }
     div {
         @include flex(column, center);
         height: 20em;
         overflow: hidden;
         margin: 0.5rem 0rem;
+        padding: 20px;
+        
         .tech-stack, .resource {
           position: relative;
           padding-top: 1em;
           width: 250px;
-          left: 2rem;
+          left: 1rem;
           
           li {
             display: inline-block;
@@ -52,7 +58,7 @@
         h3 {
           font-family: $body-font-family;
           font-size: 2em;
-          padding-left: 2rem;
+          padding-left: 1rem;
           padding-top: 1rem;
           margin-right: 3em;
         }
@@ -92,21 +98,17 @@
   }
 
 
-/*project heading animation*/
-.project{ 
-  font-size: 4em; 
-  
-} 
-
 
 /* Phone Styles */ 
 @media only screen and (max-width: 600px) {
   .project{ 
-    font-size: 2em; 
+    font-size: 2em !important; 
   } 
    .container{
-     a {
-       width: 250px;
+     overflow: hidden;
+     div {
+       justify-content: center;
+     
      }
    }
   }
@@ -121,24 +123,21 @@ and (-webkit-min-device-pixel-ratio: 1) {
 /* Desktop Styles */ 
 @media only screen and (min-width:1201px) {
 .container {
-    overflow-x: hidden;
-    .container {
-      width: 65vw;
-  }
- }
+    width: 100vw;
+
+}
 }
 
-
 /* Individual Project Styles */ 
-
-
 .one-projects{
   margin-top: 5%;
+  
   @include flex(row, flex-start);
   .main-project-heading{
     .project-single{
       font-size: 3em;
       margin-bottom: 5px;
+      flex-wrap: wrap;
     }
     p {
       margin: 40px 0px 20px 0px;
@@ -182,19 +181,24 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 }
 .project-content {
+  max-width: 1200px;
   display: flex;
-  background-color: #F0FBDD;
+  background-color: lightgrey;
+  padding: 5px;
   img{
-    margin: 5px 0px 5px 0px;
-   
-     padding: 20px;
+     margin: 5px;
+     padding: 5px;
+     max-width: 100%; 
+     object-fit: contain;
    }
    .content{
-     margin: 20px;
-     padding: 10px;
+     margin: 10px;
+     padding: 7px;
      font-size: .9em;
      letter-spacing: .08em;
      line-height: 1.5em;
+     font-weight: 600;
+      
    }
  }
 
@@ -207,10 +211,21 @@ and (-webkit-min-device-pixel-ratio: 1) {
       .project-content {
         flex-flow: row wrap;
         img{
-           width: 100%;
-          
+          width: 100%;
+          padding: 20px !important;
          }
       }
             
 }
 
+/* Desktop Styles */ 
+@media only screen and (min-width:1201px) {
+  .project-content {
+   
+    img{
+      padding: 20px !important;
+      width: 60% !important;
+     }
+  }
+  }
+  
