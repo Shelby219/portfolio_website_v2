@@ -33,6 +33,7 @@
         color: white;
         flex: 1 1 50%;  
         
+        
     }
     div {
         @include flex(column, center);
@@ -40,7 +41,6 @@
         overflow: hidden;
         margin: 0.5rem 0rem;
         padding: 20px;
-        
         .tech-stack, .resource {
           position: relative;
           padding-top: 1em;
@@ -122,11 +122,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 /* Desktop Styles */ 
 @media only screen and (min-width:1201px) {
-.container {
-    width: 100vw;
+  .container {
+    overflow-x: hidden;	    
+    .container {	  
+      width: 100vw;	      
+  }	  
+ }	
+ }
 
-}
-}
 
 /* Individual Project Styles */ 
 .one-projects{
@@ -135,9 +138,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   @include flex(row, flex-start);
   .main-project-heading{
     .project-single{
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 5px;
-      flex-wrap: wrap;
+      
     }
     p {
       margin: 40px 0px 20px 0px;
@@ -181,24 +184,24 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 }
 .project-content {
-  max-width: 1200px;
+  
   display: flex;
   background-color: lightgrey;
   padding: 5px;
   img{
      margin: 5px;
      padding: 5px;
-     max-width: 100%; 
-     object-fit: contain;
+     width: 100%;
+    
    }
    .content{
      margin: 10px;
      padding: 7px;
-     font-size: .9em;
+     font-size: 1rem;
      letter-spacing: .08em;
      line-height: 1.5em;
      font-weight: 600;
-      
+     width: 100%;
    }
  }
 
@@ -211,7 +214,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
       .project-content {
         flex-flow: row wrap;
         img{
-          width: 100%;
           padding: 20px !important;
          }
       }
@@ -223,8 +225,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .project-content {
    
     img{
-      padding: 20px !important;
-      width: 60% !important;
+       width: 130% !important;
+       padding: 20px !important;
      }
   }
   }

@@ -605,6 +605,9 @@ header img {
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
   .container {
+    overflow-x: hidden;
+  }
+  .container .container {
     width: 100vw;
   }
 }
@@ -627,10 +630,8 @@ header img {
 }
 
 .one-projects .main-project-heading .project-single {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 5px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .one-projects .main-project-heading p {
@@ -700,7 +701,6 @@ header img {
 }
 
 .one-projects .project-content {
-  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,18 +711,17 @@ header img {
 .one-projects .project-content img {
   margin: 5px;
   padding: 5px;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
 }
 
 .one-projects .project-content .content {
   margin: 10px;
   padding: 7px;
-  font-size: .9em;
+  font-size: 1rem;
   letter-spacing: .08em;
   line-height: 1.5em;
   font-weight: 600;
+  width: 100%;
 }
 
 /* Tablet Styles */
@@ -734,7 +733,6 @@ header img {
             flex-flow: row wrap;
   }
   .project-content img {
-    width: 100%;
     padding: 20px !important;
   }
 }
@@ -742,8 +740,8 @@ header img {
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
   .project-content img {
+    width: 130% !important;
     padding: 20px !important;
-    width: 60% !important;
   }
 }
 
