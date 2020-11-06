@@ -792,6 +792,7 @@ header img {
   }
   .project-content img {
     margin: 10px !important;
+    height: auto;
   }
 }
 
@@ -800,6 +801,7 @@ header img {
   .project-content img {
     margin: 10px !important;
     width: 130% !important;
+    height: auto !important;
   }
 }
 
