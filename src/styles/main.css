@@ -445,11 +445,18 @@ header img {
   padding: 20px;
 }
 
+@media only screen and (min-width: 601px) {
+  .all-projects div {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
 .all-projects div .tech-stack, .all-projects div .resource {
   position: relative;
   padding-top: 1em;
   width: 250px;
   left: 1rem;
+  right: 1rem;
 }
 
 .all-projects div .tech-stack li, .all-projects div .resource li {
@@ -468,17 +475,18 @@ header img {
   margin-right: 3em;
 }
 
-@media only screen and (min-width: 601px) {
-  .all-projects div {
-    margin: 0.5rem 0.5rem;
-  }
-}
-
 #ytc {
   background-image: url(../imgs/ytc.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #ytc {
+    background-size: auto 280px !important;
+  }
 }
 
 #ytc:hover {
@@ -491,8 +499,15 @@ header img {
 #taskio {
   background-image: url(../imgs/taskio.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #taskio {
+    background-size: auto 280px !important;
+  }
 }
 
 #taskio:hover {
@@ -505,8 +520,15 @@ header img {
 #readme {
   background-image: url(../imgs/readme.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #readme {
+    background-size: auto 280px !important;
+  }
 }
 
 #readme:hover {
@@ -519,8 +541,15 @@ header img {
 #pokemon {
   background-image: url(../imgs/pokemon.png);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #pokemon {
+    background-size: auto 280px !important;
+  }
 }
 
 #pokemon:hover {
@@ -533,8 +562,15 @@ header img {
 #rpsls {
   background-image: url(https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #rpsls {
+    background-size: auto 280px !important;
+  }
 }
 
 #rpsls:hover {
@@ -545,10 +581,17 @@ header img {
 }
 
 #old_port {
-  background-image: url(../imgs/old_port.png);
+  background-image: url(../imgs/old_port.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #old_port {
+    background-size: auto 280px !important;
+  }
 }
 
 #old_port:hover {
@@ -559,10 +602,17 @@ header img {
 }
 
 #new_port {
-  background-image: url(../imgs/new_port.png);
+  background-image: url(../imgs/new_port.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #new_port {
+    background-size: auto 280px !important;
+  }
 }
 
 #new_port:hover {
@@ -575,8 +625,15 @@ header img {
 #pokemon {
   background-image: url(../imgs/pokemon.png);
   background-position: center;
-  background-size: cover;
+  background-size: auto 450px;
+  background-repeat: no-repeat;
   color: transparent;
+}
+
+@media only screen and (max-width: 601px) {
+  #pokemon {
+    background-size: auto 280px !important;
+  }
 }
 
 #pokemon:hover {

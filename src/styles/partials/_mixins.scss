@@ -10,10 +10,13 @@
  @mixin background($colour, $url) {
     background-image: url(#{$url});
     background-position: center;
-    background-size: cover;
+    background-size: auto 450px;
+    background-repeat: no-repeat;
     color: transparent;
    
-   
+    @media only screen and (max-width: 601px) {
+      background-size: auto 280px !important;
+    }  
     &:hover {
       color: black;
       background: $colour;
