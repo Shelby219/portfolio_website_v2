@@ -190,9 +190,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
   background-color: lightgrey;
   padding: 5px;
   img{
-     margin: 5px;
-     padding: 5px;
+     margin: 7px;
+  
      width: 100%;
+     border: 3px solid black;
     
    }
    .content{
@@ -215,7 +216,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
       .project-content {
         flex-flow: row wrap;
         img{
-          padding: 20px !important;
+          margin: 10px !important;
          }
       }
             
@@ -226,8 +227,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .project-content {
    
     img{
+      margin: 10px !important;
        width: 130% !important;
-       padding: 20px !important;
+       
      }
   }
   }

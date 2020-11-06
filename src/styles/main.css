@@ -766,9 +766,9 @@ header img {
 }
 
 .one-projects .project-content img {
-  margin: 5px;
-  padding: 5px;
+  margin: 7px;
   width: 100%;
+  border: 3px solid black;
 }
 
 .one-projects .project-content .content {
@@ -790,15 +790,15 @@ header img {
             flex-flow: row wrap;
   }
   .project-content img {
-    padding: 20px !important;
+    margin: 10px !important;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
   .project-content img {
+    margin: 10px !important;
     width: 130% !important;
-    padding: 20px !important;
   }
 }
 
