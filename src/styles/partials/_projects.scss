@@ -85,7 +85,8 @@
     @include background($background-color, "../imgs/pokemon.png");
   }
 #rpsls {
-    @include background($background-color, "https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png");
+    @include background($background-color, "../imgs/rpsls.jpg");
+
   }
 #old_port {
     @include background($background-color, "../imgs/old_port.jpg");
@@ -95,7 +96,7 @@
     @include background($background-color, "../imgs/new_port.jpg");
   }
 #pokemon{
-    @include background($background-color, "../imgs/pokemon.png");
+    @include background($background-color, "../imgs/poke.jpg");
   }
 
 
@@ -193,7 +194,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
      margin: 7px;
      width: 100%;
      border: 3px solid black;
-     height: auto;
+
    }
    .content{
      margin: 10px;
@@ -216,7 +217,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         flex-flow: row wrap;
         img{
           margin: 10px !important;
-          height: auto;
+        
          }
       }
             
@@ -229,7 +230,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     img{
       margin: 10px !important;
        width: 130% !important;
-       height: auto !important;
+      
      }
   }
   }

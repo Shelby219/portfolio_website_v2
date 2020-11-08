@@ -560,7 +560,7 @@ header img {
 }
 
 #rpsls {
-  background-image: url(https://www.macworld.co.uk/cmsdata/features/3608274/Terminalicon2_thumb800.png);
+  background-image: url(../imgs/rpsls.jpg);
   background-position: center;
   background-size: auto 450px;
   background-repeat: no-repeat;
@@ -623,7 +623,7 @@ header img {
 }
 
 #pokemon {
-  background-image: url(../imgs/pokemon.png);
+  background-image: url(../imgs/poke.jpg);
   background-position: center;
   background-size: auto 450px;
   background-repeat: no-repeat;
@@ -769,7 +769,6 @@ header img {
   margin: 7px;
   width: 100%;
   border: 3px solid black;
-  height: auto;
 }
 
 .one-projects .project-content .content {
@@ -792,7 +791,6 @@ header img {
   }
   .project-content img {
     margin: 10px !important;
-    height: auto;
   }
 }
 
@@ -801,7 +799,6 @@ header img {
   .project-content img {
     margin: 10px !important;
     width: 130% !important;
-    height: auto !important;
   }
 }
 
