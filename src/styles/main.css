@@ -782,6 +782,7 @@ header img {
   margin: 0 auto;
   margin-top: 15px !important;
   margin-bottom: 15px !important;
+  height: auto;
 }
 
 .one-projects .project-content .content {
