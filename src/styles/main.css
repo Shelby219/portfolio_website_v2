@@ -778,6 +778,19 @@ header img {
   padding: 5px;
 }
 
+.one-projects .project-content div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .one-projects .project-content img {
   width: 70%;
   border: 3px solid #aa9f26;
@@ -786,13 +799,6 @@ header img {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
   height: auto;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .one-projects .project-content .content {
