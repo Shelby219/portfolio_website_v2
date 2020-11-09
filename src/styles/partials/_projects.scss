@@ -195,18 +195,19 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 .project-content {
   display: flex;
+  flex-flow: row wrap;
   background-color: lightgrey;
   padding: 5px;
   img{
-     width: 100%;
-     height: auto;
-     border: 3px solid orange;
+     width: 70%;
+     border: 3px solid $alternate-color;
      display: block;
      margin: 0 auto;
      margin-top: 15px !important;
      margin-bottom: 15px !important;
      height: auto;
-     object-fit: contain;
+     align-items: flex-start;
+     flex-direction: column;
    }
    .content{
      margin: 10px;
@@ -221,30 +222,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 }    
 
-/* Tablet Styles */ 
-@media only screen 
-
-and (max-width: 1025px) 
-and (-webkit-min-device-pixel-ratio: 1) {
-      .project-content {
-        flex-flow: row wrap;
-        img{
-      
-           width: 70% !important;
-           display: block;
-          margin: 0 auto;
-          margin-top: 15px !important;
-          margin-bottom: 15px !important;
-     
-         }
-      }
-            
-}
 
 /* Desktop Styles */ 
 @media only screen and (min-width:1026px) {
   .project-content {
-
+    flex-flow: row nowrap !important;
     img{
       width: 50% !important;
       display: block;
