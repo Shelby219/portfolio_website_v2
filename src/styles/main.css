@@ -395,6 +395,7 @@ header img {
 }
 
 .container .project-heading p {
+  font-size: 1em;
   margin: 40px 0px 20px 0px;
 }
 
@@ -692,6 +693,7 @@ header img {
 }
 
 .one-projects .main-project-heading p {
+  font-size: 1em;
   margin: 40px 0px 20px 0px;
 }
 
@@ -705,6 +707,7 @@ header img {
 }
 
 .one-projects .resources a {
+  color: black;
   display: inline-block;
   text-decoration: none;
 }
@@ -772,10 +775,13 @@ header img {
 }
 
 .one-projects .project-content img {
-  margin: 10px !important;
   width: 100%;
   height: auto;
-  border: 3px solid black;
+  border: 3px solid orange;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 .one-projects .project-content .content {
@@ -797,17 +803,21 @@ header img {
             flex-flow: row wrap;
   }
   .project-content img {
-    margin: 10px !important;
-    width: 100%;
-    height: auto;
+    width: 70% !important;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
   }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1026px) {
   .project-content img {
-    margin: 10px !important;
-    width: 130% !important;
+    width: 50% !important;
+    display: block;
+    margin: 0 auto;
+    margin: 15px !important;
   }
 }
 
