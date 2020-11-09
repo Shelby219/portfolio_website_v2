@@ -783,6 +783,8 @@ header img {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .one-projects .project-content .content {
