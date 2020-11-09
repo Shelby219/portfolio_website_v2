@@ -820,10 +820,14 @@ header img {
             flex-flow: row nowrap !important;
   }
   .project-content img {
-    width: 50% !important;
+    width: 100% !important;
     display: block;
     margin: 0 auto;
     margin: 15px !important;
+  }
+  .project-content .content {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
   }
 }
 
