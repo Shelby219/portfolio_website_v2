@@ -200,9 +200,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
   padding: 5px;
   div:first-child{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-   
+    flex-direction: column; //this fixes safari image stretching
+    align-items: flex-start; //this fixes safari image stretching
   }
   img{
      width: 70%;
