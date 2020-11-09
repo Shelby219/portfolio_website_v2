@@ -140,7 +140,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   @include flex(row, flex-start);
   .main-project-heading{
     .project-single{
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 5px;
       
     }
@@ -158,6 +158,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
    
     a {
       display: inline-block;
+      text-decoration: none;
       &:after {
         content: " / ";
       }
@@ -185,14 +186,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
         color: white;
     }
 }
+.TLDR{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 .project-content {
-  
   display: flex;
   background-color: lightgrey;
   padding: 5px;
   img{
-     margin: 7px;
+    margin: 10px !important;
      width: 100%;
+     height: auto;
      border: 3px solid black;
 
    }
@@ -217,7 +222,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         flex-flow: row wrap;
         img{
           margin: 10px !important;
-        
+          width: 100%;
+     height: auto;
          }
       }
             

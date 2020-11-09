@@ -687,7 +687,7 @@ header img {
 }
 
 .one-projects .main-project-heading .project-single {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 5px;
 }
 
@@ -706,6 +706,7 @@ header img {
 
 .one-projects .resources a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .one-projects .resources a:after {
@@ -757,6 +758,11 @@ header img {
   color: white;
 }
 
+.one-projects .TLDR {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 .one-projects .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,8 +772,9 @@ header img {
 }
 
 .one-projects .project-content img {
-  margin: 7px;
+  margin: 10px !important;
   width: 100%;
+  height: auto;
   border: 3px solid black;
 }
 
@@ -791,6 +798,8 @@ header img {
   }
   .project-content img {
     margin: 10px !important;
+    width: 100%;
+    height: auto;
   }
 }
 
