@@ -3,7 +3,7 @@
 .intro-container {
     @include flex(column, center);
     margin-top: 200px;    
-  
+
    
     h1 {
         font-size: 5em;
@@ -52,20 +52,18 @@
 
 .intro-sec1 {
     margin: 5px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .intro-content {
     margin-top: 5em;
     line-height: 2em;
-    font-size: 1.2rem;
-   
+    font-size: 1.2rem; 
     p{
         margin-top: 25px;
     }
-    .stack {
-        
+    .stack {  
         margin-top: 75px;
         margin-bottom: 50px;
         font-family: $heading-font-family;
@@ -78,8 +76,7 @@
             margin: 5px;
             font-size: .75em;
             background-color: black;
-            color: white;
-            
+            color: white;  
         }
     }
     
@@ -91,16 +88,16 @@
 /* Tablet Styles */ /** MAIN CONTENT */
 @media only screen and (min-width: 768px)  {
     .intro-sec1, .typewriter {
-        margin-right: 200px;
-        margin-left: 200px; 
+        margin-right: 100px;
+        margin-left: 100px; 
     }
 }
  
 /* Desktop Styles */ /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
     .intro-sec1, .typewriter{
-        margin-right: 200px;
-        margin-left: 200px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
 
     .intro-container h2 {
