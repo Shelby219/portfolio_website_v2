@@ -896,8 +896,8 @@ header img {
 
 .intro-sec1 {
   margin: 5px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .intro-content {
@@ -955,8 +955,8 @@ header img {
 /** MAIN CONTENT */
 @media only screen and (min-width: 768px) {
   .intro-sec1, .typewriter {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
   }
 }
 
@@ -964,8 +964,8 @@ header img {
 /* MAIN CONTENT */
 @media only screen and (min-width: 996px) {
   .intro-sec1, .typewriter {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
   }
   .intro-container h2 {
     font-size: 5rem;
