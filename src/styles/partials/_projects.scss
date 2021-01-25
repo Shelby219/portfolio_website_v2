@@ -1,23 +1,25 @@
 
 .container {
-    @include flex(column, center);
-    width: 90vw;
-    max-width: 1200px;
-    margin-bottom: 200px;
-    margin-top: 100px;   
+  @include flex(column, center);
+  width: 90vw;
+  
+  max-width: 1200px;
+  margin-bottom: 200px;
+  margin-top: 100px;   
    
     .project-heading{
       margin-bottom: 30px;
+      margin-top: 50px;
       padding: 10px;
       max-width: 1000px;
       font-family: $heading-font-family;
       .project{
-        font-size: 3em;
-        margin-bottom: 5px;
+        font-size: 3.3em;
+        margin: 10px 20px 20px 20px;
       }
       p {
         font-size: 1em;
-        margin: 40px 0px 20px 0px;
+        margin: 40px 20px 20px 20px;
       }
     }
     h4{
@@ -27,8 +29,9 @@
 
 .all-projects{
     margin-top: 5%;
+    align-content: center;
     @include flex(row, flex-start);
-   
+    
     a {
         text-decoration: none;
         color: white;
@@ -48,7 +51,7 @@
         .tech-stack, .resource {
           position: relative;
           padding-top: 1em;
-          width: 250px;
+          max-width: 330px;
           left: 1rem;
           right: 1rem;
           li {
@@ -72,61 +75,90 @@
 }
 
 #ytc {
-    @include background($background-color, "../imgs/ytc.jpg");
+    @include background($background-color, "../imgs/ytc_pc.png");
   }
-
+#fridgeMate {
+    @include background($background-color, "../imgs/fridgemate_pc.png");
+  }
 #taskio {
-    @include background($background-color, "../imgs/taskio.jpg");
+    @include background($background-color, "../imgs/taskio_pc.png");
   }
 
 #readme {
-    @include background($background-color, "../imgs/readme.jpg");
+    @include background($background-color, "../imgs/readme_pc.png");
   }
-#pokemon {
-    @include background($background-color, "../imgs/pokemon.png");
-  }
+
 #rpsls {
-    @include background($background-color, "../imgs/rpsls.jpg");
+    @include background($background-color, "../imgs/term_app.png");
 
   }
 #old_port {
-    @include background($background-color, "../imgs/old_port.jpg");
+    @include background($background-color, "../imgs/old_port_pc.png");
   }
 
 #new_port {
-    @include background($background-color, "../imgs/new_port.jpg");
+    @include background($background-color, "../imgs/new_port_pc.png");
   }
 #pokemon{
-    @include background($background-color, "../imgs/poke.jpg");
+    @include background($background-color, "../imgs/poke_pc.png");
   }
-
 
 
 /* Phone Styles */ 
 @media only screen and (max-width: 600px) {
-  .project{ 
-    font-size: 2em !important; 
-  } 
+  .project-heading{ 
+    .project{
+      font-size: 1.6em !important;
+    }
+    p {
+      font-size: 0.8em !important; 
+    }
+  }
    .container{
-     overflow: hidden;
+     align-content: center !important;
+   
      div {
        justify-content: center;
      
      }
    }
+   .all-projects{ 
+     align-content: center !important;
+    h3 {
+      font-size: 1.4em !important; 
+    }
+
+    .tech-stack, .resource {
+      font-size: 0.9em !important; 
+      width: 250px;
+    }
+      
+   }
+   
+  
+
+
+
+  .one-projects{
+    div:nth-child(1){
+      max-width: 290px;
+    }
+    .project-single{
+      font-size: 1.6em !important;
+    }
+    p {
+      font-size: 0.8em !important; 
+    }
+   }
+
+  
   }
 
-/* Tablet Styles */ 
-@media only screen 
-and (min-device-width: 601px) 
-and (-webkit-min-device-pixel-ratio: 1) {
- 
-      
-}
+
 /* Desktop Styles */ 
 @media only screen and (min-width:1201px) {
   .container {
-    overflow-x: hidden;	    
+    
     .container {	  
       width: 100vw;	      
   }	  
@@ -137,7 +169,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 /* Individual Project Styles */ 
 .one-projects{
   margin-top: 5%;
-  
   @include flex(row, flex-start);
   .main-project-heading{
     .project-single{
@@ -177,6 +208,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: $heading-font-family;
+
     @include flex(row, flex-start);
     li {
         @include flex(column, center);
@@ -196,8 +228,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 .project-content {
   display: flex;
   flex-flow: row wrap;
-  background-color: lightgrey;
+  // background-color: lightgrey;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 5px;
+  align-items: center;
   div:first-child{
     display: flex;
     flex-direction: column; //this fixes safari image stretching
@@ -205,26 +239,41 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   img{
      width: 70%;
-     border: 3px solid $alternate-color;
+     filter: drop-shadow(2px 4px 8px #585858);
      display: block;
      margin: 0 auto;
      margin-top: 15px !important;
      margin-bottom: 15px !important;
+     
      height: auto;
 
    }
    .content{
      margin: 10px;
-     padding: 10px;
-     font-size: 1rem;
+     padding: 5px;
+     font-size:0.85rem;
      letter-spacing: .08em;
      line-height: 1.5em;
      font-weight: 500;
      width: 100%;
+     
    }
  }
 }    
+/* Tablet Styles */ 
+@media only screen and (min-width:600px) and (max-width:1026px) {
+  .project-content {
+    
+    .content{
+      margin: 35px !important;
+      
+     }
+     img{
+      padding: 20px;
+    }
+    }
 
+}
 /* Desktop Styles */ 
 @media only screen and (min-width:1026px) {
   .project-content {
@@ -236,9 +285,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
       margin: 15px !important;
     }
     .content{
-      margin-left: 25px !important;
-      margin-right: 25px !important;
+      margin-left: 35px !important;
+      margin-right: 35px !important;
      }
+     img{
+      padding: 20px;
+    }
     }
   }
   

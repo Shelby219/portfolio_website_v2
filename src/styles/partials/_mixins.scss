@@ -10,10 +10,11 @@
  @mixin background($colour, $url) {
     background-image: url(#{$url});
     background-position: center;
-    background-size: auto 450px;
+    background-size: 330px;
     background-repeat: no-repeat;
     color: transparent;
-   
+
+    filter: drop-shadow(2px 4px 8px #585858);
     @media only screen and (max-width: 601px) {
       background-size: auto 280px !important;
     }  
@@ -22,6 +23,18 @@
       background: $colour;
       transition: .5s ease-in;
     }
-   
+      /* Phone Styles */ 
+    @media only screen and (max-width: 600px) {
+      background-size: 290px !important;
+     
+    }
+      /* Phone Styles */ 
+      @media only screen and (max-width: 375px) {
+        background-size: 270px !important;
+       
+      }
   }
+
+
+
 

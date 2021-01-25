@@ -384,19 +384,20 @@ header img {
 
 .container .project-heading {
   margin-bottom: 30px;
+  margin-top: 50px;
   padding: 10px;
   max-width: 1000px;
   font-family: "Trispace", sans-serif;
 }
 
 .container .project-heading .project {
-  font-size: 3em;
-  margin-bottom: 5px;
+  font-size: 3.3em;
+  margin: 10px 20px 20px 20px;
 }
 
 .container .project-heading p {
   font-size: 1em;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 20px 20px 20px;
 }
 
 .container h4 {
@@ -405,6 +406,8 @@ header img {
 
 .all-projects {
   margin-top: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +458,7 @@ header img {
 .all-projects div .tech-stack, .all-projects div .resource {
   position: relative;
   padding-top: 1em;
-  width: 250px;
+  max-width: 330px;
   left: 1rem;
   right: 1rem;
 }
@@ -477,11 +480,15 @@ header img {
 }
 
 #ytc {
-  background-image: url(../imgs/ytc.jpg);
+  background-image: url(../imgs/ytc_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -497,12 +504,65 @@ header img {
   transition: .5s ease-in;
 }
 
-#taskio {
-  background-image: url(../imgs/taskio.jpg);
+@media only screen and (max-width: 600px) {
+  #ytc {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #ytc {
+    background-size: 270px !important;
+  }
+}
+
+#fridgeMate {
+  background-image: url(../imgs/fridgemate_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
+}
+
+@media only screen and (max-width: 601px) {
+  #fridgeMate {
+    background-size: auto 280px !important;
+  }
+}
+
+#fridgeMate:hover {
+  color: black;
+  background: #6be8bf;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+  #fridgeMate {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #fridgeMate {
+    background-size: 270px !important;
+  }
+}
+
+#taskio {
+  background-image: url(../imgs/taskio_pc.png);
+  background-position: center;
+  background-size: 330px;
+  background-repeat: no-repeat;
+  color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -518,12 +578,28 @@ header img {
   transition: .5s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  #taskio {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #taskio {
+    background-size: 270px !important;
+  }
+}
+
 #readme {
-  background-image: url(../imgs/readme.jpg);
+  background-image: url(../imgs/readme_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -539,33 +615,28 @@ header img {
   transition: .5s ease-in;
 }
 
-#pokemon {
-  background-image: url(../imgs/pokemon.png);
-  background-position: center;
-  background-size: auto 450px;
-  background-repeat: no-repeat;
-  color: transparent;
-}
-
-@media only screen and (max-width: 601px) {
-  #pokemon {
-    background-size: auto 280px !important;
+@media only screen and (max-width: 600px) {
+  #readme {
+    background-size: 290px !important;
   }
 }
 
-#pokemon:hover {
-  color: black;
-  background: #6be8bf;
-  -webkit-transition: .5s ease-in;
-  transition: .5s ease-in;
+@media only screen and (max-width: 375px) {
+  #readme {
+    background-size: 270px !important;
+  }
 }
 
 #rpsls {
-  background-image: url(../imgs/rpsls.jpg);
+  background-image: url(../imgs/term_app.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -581,12 +652,28 @@ header img {
   transition: .5s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  #rpsls {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #rpsls {
+    background-size: 270px !important;
+  }
+}
+
 #old_port {
-  background-image: url(../imgs/old_port.jpg);
+  background-image: url(../imgs/old_port_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -602,12 +689,28 @@ header img {
   transition: .5s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  #old_port {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #old_port {
+    background-size: 270px !important;
+  }
+}
+
 #new_port {
-  background-image: url(../imgs/new_port.jpg);
+  background-image: url(../imgs/new_port_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -623,12 +726,28 @@ header img {
   transition: .5s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  #new_port {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #new_port {
+    background-size: 270px !important;
+  }
+}
+
 #pokemon {
-  background-image: url(../imgs/poke.jpg);
+  background-image: url(../imgs/poke_pc.png);
   background-position: center;
-  background-size: auto 450px;
+  background-size: 330px;
   background-repeat: no-repeat;
   color: transparent;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
+  /* Phone Styles */
+  /* Phone Styles */
 }
 
 @media only screen and (max-width: 601px) {
@@ -644,27 +763,59 @@ header img {
   transition: .5s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  #pokemon {
+    background-size: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #pokemon {
+    background-size: 270px !important;
+  }
+}
+
 /* Phone Styles */
 @media only screen and (max-width: 600px) {
-  .project {
-    font-size: 2em !important;
+  .project-heading .project {
+    font-size: 1.6em !important;
+  }
+  .project-heading p {
+    font-size: 0.8em !important;
   }
   .container {
-    overflow: hidden;
+    -ms-flex-line-pack: center !important;
+        align-content: center !important;
   }
   .container div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .all-projects {
+    -ms-flex-line-pack: center !important;
+        align-content: center !important;
+  }
+  .all-projects h3 {
+    font-size: 1.4em !important;
+  }
+  .all-projects .tech-stack, .all-projects .resource {
+    font-size: 0.9em !important;
+    width: 250px;
+  }
+  .one-projects div:nth-child(1) {
+    max-width: 290px;
+  }
+  .one-projects .project-single {
+    font-size: 1.6em !important;
+  }
+  .one-projects p {
+    font-size: 0.8em !important;
+  }
 }
 
-/* Tablet Styles */
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
-  .container {
-    overflow-x: hidden;
-  }
   .container .container {
     width: 100vw;
   }
@@ -774,8 +925,12 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-color: lightgrey;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .one-projects .project-content div:first-child {
@@ -793,7 +948,8 @@ header img {
 
 .one-projects .project-content img {
   width: 70%;
-  border: 3px solid #6be8bf;
+  -webkit-filter: drop-shadow(2px 4px 8px #585858);
+          filter: drop-shadow(2px 4px 8px #585858);
   display: block;
   margin: 0 auto;
   margin-top: 15px !important;
@@ -803,12 +959,22 @@ header img {
 
 .one-projects .project-content .content {
   margin: 10px;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 5px;
+  font-size: 0.85rem;
   letter-spacing: .08em;
   line-height: 1.5em;
   font-weight: 500;
   width: 100%;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 1026px) {
+  .project-content .content {
+    margin: 35px !important;
+  }
+  .project-content img {
+    padding: 20px;
+  }
 }
 
 /* Desktop Styles */
@@ -826,8 +992,11 @@ header img {
     margin: 15px !important;
   }
   .project-content .content {
-    margin-left: 25px !important;
-    margin-right: 25px !important;
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+  }
+  .project-content img {
+    padding: 20px;
   }
 }
 
