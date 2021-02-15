@@ -867,7 +867,7 @@ header img {
   content: " / ";
 }
 
-.one-projects .resources a:hover {
+.one-projects .resources a:hover, .one-projects .resources a:focus {
   background-color: #6be8bf;
   cursor: pointer;
 }
